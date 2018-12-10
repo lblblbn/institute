@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LING Institute</title>
+
+<style>
+#hey {
+    height: 1512px;
+    width: 2016px;
+}
+
+#are {
+color: rgb(220, 230, 230);
+position: fixed;
+top: 30%;
+right: 35%;
+font: 3em "Open Sans", sans-serif;
+background-color:rgba(88, 88, 100, 0.5);
+}
+
+#you {
+color: rgb(230, 230, 220);
+position: fixed;
+top: 40%;
+right: 25%;
+font: 3em "Open Sans", sans-serif;
+background-color:rgba(100, 88, 88, 0.5);
+}
+
+#ready {
+color: orange;
+position: fixed;
+top: 65%;
+right: 5%;
+font: 8em "KaiTi", "STKaiti", "SimHei";
+background-color:rgba(50, 50, 50, 0.5);
+}
+
+.to:hover {
+animation-name: mist;
+animation-duration: 5s;
+}
+
+.go {
+color: orange;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+a {
+color: rgb(199, 208, 230);
+text-decoration: none;
+}
+
+.go:hover {
+animation-name: firaga;
+animation-duration: 7s;
+}
+
+@keyframes mist {
+from {color: rgb(139, 173, 182);}
+to {color: rgb(30, 69, 148);}
+}
+
+@keyframes firaga {
+from {color: #ffc133;}
+to {color: red;}
+}
+</style>
+</head>
+
+<body>
+<img id="hey" src="clouds.jpeg" alt="takeoff" />
+
+<div id="are">do you <a class="to" href="https://www.youtube.com/watch?v=SFMgSwcgaRE">want</a></div>
+
+<div id="you">to <a class="to" href="https://www.youtube.com/watch?v=Sp1hff70HRs">soar?</a></div>
+
+<div id="ready"><a class="go" href="https://en.wikipedia.org/wiki/Mandate_of_Heaven">凌</a></div>
+</body>
+
+</html>
+
+<!--
+    // Bo's RPG
+    // Aegis - perfect defense
+    // Mythril - divine edge
+    // Sophia - heavenly wisdom
+
+    Player()
+    {
+        Training.strengthen(body);
+        Training.hone(mind);
+        Training.grow(spirit);
+
+        Search.gather(equipment);
+        Search.gather(allies);
+        Search.gather(blessings);
+
+        Player.ready();
+    }
+
+    World.setQuest(redemption);
+    World.run();
+-->
