@@ -36,6 +36,17 @@ top: 65%;
 right: 5%;
 font: 8em "KaiTi", "STKaiti", "SimHei";
 background-color:rgba(50, 50, 50, 0.5);
+z-index: 0;
+}
+
+#soar {
+color: white;
+position: fixed;
+top: 86%;
+right: 3%;
+font: 2em "KaiTi", "STKaiti", "SimHei";
+background-color:rgba(50, 50, 50, 0.5);
+z-index: 1;
 }
 
 .to:hover {
@@ -77,7 +88,9 @@ to {color: red;}
 
 <div id="you">to <a class="to" href="https://www.youtube.com/watch?v=Sp1hff70HRs">soar?</a></div>
 
-<div id="ready"><a class="to" href="Ling.pdf">凌</a></div>
+<div id="ready"><a class="to" href="Ling.pdf">凌<br />&nbsp;</a></div>
+
+<div class="to" id="soar">"Flawless Victory"</div>
 </body>
 
 </html>
@@ -99,9 +112,14 @@ to {color: red;}
         Search.gather(allies);
         Search.gather(blessings);
 
+        Practice.upgrade(abilities);
+        Practice.hone(languages);
+        Practice.learn(ultimates);
+
+        // hf gl
         Player.ready();
     }
 
-    World.setQuest(redemption);
+    World.setQuest(Renaissance);
     World.run();
 -->
