@@ -12,71 +12,75 @@
 }
 
 #are {
-color: rgb(220, 230, 230);
-position: fixed;
-top: 30%;
-right: 35%;
-font: 3em "Open Sans", sans-serif;
-background-color:rgba(88, 88, 100, 0.5);
+    color: rgb(220, 230, 230);
+    position: fixed;
+    top: 30%;
+    right: 35%;
+    font-size: 3em;
+    background-color:rgba(88, 88, 100, 0.5);
 }
 
 #you {
-color: rgb(230, 230, 220);
-position: fixed;
-top: 40%;
-right: 25%;
-font: 3em "Open Sans", sans-serif;
-background-color:rgba(100, 88, 88, 0.5);
+    color: rgb(230, 230, 220);
+    position: fixed;
+    top: 40%;
+    right: 25%;
+    font-size: 3em;
+    background-color:rgba(100, 88, 88, 0.5);
 }
 
 #ready {
-color: orange;
-position: fixed;
-top: 65%;
-right: 5%;
-font: 8em "KaiTi", "STKaiti", "SimHei";
-background-color:rgba(50, 50, 50, 0.5);
-z-index: 0;
+    color: orange;
+    position: fixed;
+    top: 65%;
+    right: 5%;
+    font: 8em "Heiti", "KaiTi", "STKaiti", "SimHei";
+    background-color:rgba(50, 50, 50, 0.5);
+    z-index: 0;
 }
 
 .to:hover {
-animation-name: mist;
-animation-duration: 5s;
+    animation-name: mist;
+    animation-duration: 5s;
 }
 
 #soar {
-color: white;
-position: fixed;
-top: 86%;
-right: 3%;
-font: 2em "KaiTi", "STKaiti", "SimHei";
-background-color:rgba(50, 50, 50, 0.5);
-z-index: 1;
+    color: white;
+    position: fixed;
+    top: 86%;
+    right: 3%;
+    font-size: 2em;
+    background-color:rgba(50, 50, 50, 0.5);
+    z-index: 1;
 }
 
 .go {
-color: orange;
-background-color: rgba(0, 0, 0, 0.5);
-}
-
-a {
-color: rgb(199, 208, 230);
-text-decoration: none;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .go:hover {
-animation-name: firaga;
-animation-duration: 7s;
+    animation-name: firaga;
+    animation-duration: 7s;
+}
+
+.S {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+a {
+    color: rgb(199, 208, 230);
+    text-decoration: none;
 }
 
 @keyframes mist {
-from {color: rgb(180, 189, 211);}
-to {color: orangered;}
+    from {color: rgb(180, 189, 211);}
+    to {color: orangered;}
 }
 
 @keyframes firaga {
-from {color: #ffc133;}
-to {color: red;}
+    from {color: #ffc133;}
+    to {color: red;}
 }
 </style>
 </head>
@@ -84,13 +88,13 @@ to {color: red;}
 <body>
 <a id="impetus" href="clouds.mov"><img id="hey" src="clouds.jpeg" alt="takeoff" /></a>
 
-<div id="are">do <a class="to" href="https://www.youtube.com/watch?v=Uk1hv6h7O1Y">you</a> <a class="to" href="https://www.youtube.com/watch?v=SFMgSwcgaRE">want</a></div>
+<div id="are" class="S">do <a class="to" href="">you</a> <a class="to" href="https://www.youtube.com/watch?v=SFMgSwcgaRE">dream</a></div>
 
-<div id="you">to <a class="to" href="https://www.youtube.com/watch?v=Sp1hff70HRs">soar?</a></div>
+<div id="you" class="S">to <a class="to" href="https://www.youtube.com/watch?v=Sp1hff70HRs">soar?</a></div>
 
 <div id="ready"><a class="to" href="Ling.pdf">凌<br />&nbsp;<br />&nbsp;</a></div>
 
-<div class="to" id="soar">"Flawless Victory"</div>
+<div id="soar" class="S to">"Flawless Victory"</div>
 </body>
 
 </html>
@@ -120,6 +124,6 @@ to {color: red;}
         Player.ready();
     }
 
-    World.setQuest(Renaissance);
+    World.setQuest("Genesis");
     World.run();
 -->
