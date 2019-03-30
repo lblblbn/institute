@@ -48,9 +48,10 @@
     color: white;
     position: fixed;
     top: 86%;
-    right: 3%;
-    font-size: 2em;
+    right: 2%;
+    font-size: 1.8em;
     background-color:rgba(50, 50, 50, 0.5);
+    text-align: right;
     z-index: 1;
 }
 
@@ -71,6 +72,11 @@
 a {
     color: rgb(199, 208, 230);
     text-decoration: none;
+}
+
+#tag {
+    font-size: .8em;
+    color: rgb(199, 208, 230);
 }
 
 @keyframes mist {
@@ -94,7 +100,9 @@ a {
 
 <div id="ready"><a class="to" href="Ling.pdf">凌<br />&nbsp;<br />&nbsp;</a></div>
 
-<div id="soar" class="S to">"Victory"</div>
+<div id="soar" class="S to">Ling Institute of Strategy<br />
+    <span id='tag' class="to">and Applied Game Theory</span>
+</div>
 </body>
 
 </html>
@@ -103,8 +111,8 @@ a {
     // Bo's RPG v.0
 
     // Aegis - perfect defense
-    // Mythril - divine edge
-    // Sophia - heavenly wisdom
+    // Mythril - heaven's edge
+    // Sophia - divine wisdom
 
     Player()
     {
@@ -124,6 +132,6 @@ a {
         Player.ready();
     }
 
-    World.setQuest("Genesis");
+    World.setQuest("Aeneid");
     World.run();
 -->
