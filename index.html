@@ -74,20 +74,23 @@ a {
     text-decoration: none;
 }
 
-.tag {
+#tag {
     font-size: .8em;
     color: rgb(199, 208, 230);
 }
 
-#claim {
-    font-size: .9em;
-    color: rgb(199, 208, 230);
-    position: fixed;
-    top: 2%;
-    right: 1%;
-    text-align: right;
+#epithet {
+    font-size: .65em;
+    color: white;
 }
 
+.claim {
+    color: rgb(170, 189, 241);
+}
+
+#tkd {
+    color: rgba(41, 66, 136, 0.877);
+}
 @keyframes mist {
     from {color: rgb(180, 189, 211);}
     to {color: orangered;}
@@ -107,19 +110,22 @@ a {
 
 <div id="you" class="S">to <a class="to" href="https://www.youtube.com/watch?v=Sp1hff70HRs">soar?</a></div>
 
-<div id="ready"><a class="to" href="Ling.pdf">凌<br />&nbsp;<br />&nbsp;</a></div>
+<div id="ready"><a href="Ling.pdf">凌<br />&nbsp;<br />&nbsp;</a></div>
 
-<div id="soar" class="S to">Ling Institute of Strategy<br />
-    <span class="to tag">and Applied Game Theory</span><br />
+<div id="soar" class="S">
+    <span>Ling Institute of Strategy</span><br />
+    <span id="tag">and Applied Game Theory</span><br />
+    <span id="epithet">"Flawless Victory" ||
+        <span>
+            <a class="claim" href="https://www.usc.edu/">Los Angeles</a>|
+            <a class="claim" href="https://www.purdue.edu/">West Lafayette</a>|
+            <a class="claim" href="https://www.princeton.edu/">Princeton</a>
+        </span>
+    </span>
 </div>
 
-<div id="claim">
-    <span class="to">Seattle</span><br />
-    <span class="to">Los Angeles</span><br />
-    <span class="to">West Lafayette</span><br />
-    <span class="to">Princeton</span></div>
+<span id="tkd">[ Official Partner of USA Olympic Taekwondo and World Taekwondo ]</span>
 </body>
-
 </html>
 
 <!--
