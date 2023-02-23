@@ -1,4 +1,5 @@
 # Institute
-Ling Institute of Strategy & Applied Game Theory
+Ling Institute of Strategy 
+> "Applied Game Theory"
 
 "hi world"
